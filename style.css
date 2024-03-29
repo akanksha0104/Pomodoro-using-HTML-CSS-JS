@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222; /* Initial background color */
+  animation: changeColor 10s infinite alternate; /* Animation for background color */
+}
+
+@keyframes changeColor {
+  0% {
+      background-color: #222; /* Initial color */
+  }
+  50% {
+      background-color: #0066ff; /* Intermediate color */
+  }
+  100% {
+      background-color: #ff3300; /* Final color */
+  }
+}
+
+.container {
+  margin-top: 50px;
+  max-width: 400px;
+}
+
+#timer {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+#buttons {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button.start {
+  background-color: #4CAF50;
+}
+
+.button.pause {
+  background-color: #f44336;
+}
+
+.button.restart {
+  background-color: #008CBA;
+}
+
+#customization {
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
